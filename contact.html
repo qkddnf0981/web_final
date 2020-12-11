@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>New Movies, Theaters Near You, Movie Tickets, Showtimes, Movie Trailers, Movies in Theaters</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png">
+	<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div class="header-con">
+				<div class="header-logo">
+					<div class="logo-img">
+						<img src="/images/logo.png" alt="logo">
+					</div>
+					<a class="logo-title" href="/">
+						<p class="sm">SIGN IN</p>
+						<p class="lg">Join AMC Stubs</p>
+					</a>
+				</div>
+				<div class="header-navigation-bar">
+					<ul>
+						<li><a href="/nowplaying.html">See A Movie</a></li>
+						<li><a href="/nowplaying.html">Our Theatres</a></li>
+						<li><a href="/nowplaying.html">Food & Drinks</a></li>
+						<li><a href="/nowplaying.html">On Demand</a></li>
+						<li><a href="/contact.html">Contact Us</a></li>
+						<li><a href="/https://www.amctheatres.com/gift-cards">Gift Cards</a></li>
+					</ul>
+				</div>
+				<div class="header-side-menu">
+					<div class="search_icon"><a href="#"><img src="/images/search.png"></a></div>
+					<div class="showtimes"><a href="#"><img src="/images/ticket.png"><p>Showtimes</p></a></div>
+				</div>
+			</div>
+		</header>
+		<section id="form-section">
+			<div class="form-title">
+				<p class="title">Contact Us</p>
+				<a href="/"> Go Back to Main Page </a>
+			</div>
+			<form class="form-con" action="https://httpbin.org/post" method="post">
+				<div class="form-sub-con">
+					<div class="form-card"><label for="Name">Name</label><input required id="name" class="form-control" type="text" name="name" placeholder="eunjin"></div> 
+					<div class="form-card"><label for="Email">Email</label><input required id="email" class="form-control" type="email" name="email" placeholder="eunjinny@example.com"></div>
+					<div class="form-card"><label for="address">Address</label> <input required type="text" id="address" name="address" placeholder="baker street 221b"></div>
+					<div class="form-card">
+						<label for="city">City</label>
+						<input required list="city" id="city-choice" name="city-choice" />
+						<datalist id="city">
+							<option value="Airdrie">
+							<option value="Beaumont">
+							<option value="Brooks">
+							<option value="Calgary">
+							<option value="Camrose">
+							<option value="Chestermere">
+							<option value="Cold Lake">
+							<option value="Edmonton">
+						</datalist>
+					</div>
+				</div>
+				<div class="form-sub-con">
+					<div class="form-card">
+						<label for="postal">Postal Code</label>
+						<input required id="postal" name="postal" type="text" inputmode="numeric" pattern="[0-9]*">
+					</div>
+					<div class="radio-con">
+						<div class="radio-card-con">
+							<p>About</p>
+							<div class="radio-card">
+								<input type="radio" id="question" name="about" value="Question"
+									checked>
+								<label for="Question">Question</label>
+							</div>
+							<div class="radio-card">
+								<input type="radio" id="comment" name="about" value="Comment">
+								<label for="Comment">Comment</label>
+							</div>
+							<div class="radio-card">
+								<input type="radio" id="orderProblem" name="about" value="Order Problem">
+								<label for="Order Problem">Order Problem</label>
+							</div>
+						</div>
+						<input type="text" id="orderproblemtext" name="abouttext" placeholder="Text Order Problem">
+					</div>
+					<div class="form-card">
+						<textarea value="enter the message here"></textarea>
+					</div>
+					<input name="secret" value="eunjin" style="display: none;">
+				</div>
+				<div class="form-button">
+					<button type="submit" class="fill-btn">Submit</button>
+				</div>
+			</form>
+		</section>
+		<footer>
+			<div class="sns-con">
+				<div class="sns-box">
+					<!-- copy sns svg-->
+					<a rel="noopener noreferrer" href="https://www.facebook.com" class="Link" target="_blank"><i class="icon_facebook" aria-label="AMC Facebook" style="background-image: none;"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="icon_facebook" viewBox="0 0 45 45" preserveAspectRatio="xMidYMid meet" fill="#ffffff" width="100%" height="100%"> <path d="M22.54 45a22.5 22.5 0 1 1 11.25-3.038A22.5 22.5 0 0 1 22.54 45zm0-43.453a21.01 21.01 0 1 0 10.49 2.812 20.925 20.925 0 0 0-10.49-2.812z"></path><path d="M27.35 18.816l-.254 3.262H23.75v11.25h-4.218v-11.25h-2.222v-3.262h2.25V16.65a5.85 5.85 0 0 1 .73-3.375 3.825 3.825 0 0 1 2.25-1.519 5.316 5.316 0 0 1 1.21 0 14.063 14.063 0 0 1 4.022.394l-.562 3.206a7.594 7.594 0 0 0-1.857-.253 1.35 1.35 0 0 0-1.659 1.181v2.532z"></path></svg></i></a>
+					<a rel="noopener noreferrer" href="https://www.youtube.com" class="Link" target="_blank"><i class="icon_youtube" aria-label="AMC Youtube" style="background-image: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 461.001 461.001" style="enable-background:new 0 0 461.001 461.001;" xml:space="preserve"><path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728  c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137  C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607  c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/></svg></i></a>
+					<a rel="noopener noreferrer" href="https://www.twitter.com" class="Link" target="_blank"><i class="icon_twitter" aria-label="AMC Twitter" style="background-image: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 410.155 410.155" style="enable-background:new 0 0 410.155 410.155;" xml:space="preserve"><path xmlns="http://www.w3.org/2000/svg" d="M403.632,74.18c-9.113,4.041-18.573,7.229-28.28,9.537c10.696-10.164,18.738-22.877,23.275-37.067  l0,0c1.295-4.051-3.105-7.554-6.763-5.385l0,0c-13.504,8.01-28.05,14.019-43.235,17.862c-0.881,0.223-1.79,0.336-2.702,0.336  c-2.766,0-5.455-1.027-7.57-2.891c-16.156-14.239-36.935-22.081-58.508-22.081c-9.335,0-18.76,1.455-28.014,4.325  c-28.672,8.893-50.795,32.544-57.736,61.724c-2.604,10.945-3.309,21.9-2.097,32.56c0.139,1.225-0.44,2.08-0.797,2.481  c-0.627,0.703-1.516,1.106-2.439,1.106c-0.103,0-0.209-0.005-0.314-0.015c-62.762-5.831-119.358-36.068-159.363-85.14l0,0  c-2.04-2.503-5.952-2.196-7.578,0.593l0,0C13.677,65.565,9.537,80.937,9.537,96.579c0,23.972,9.631,46.563,26.36,63.032  c-7.035-1.668-13.844-4.295-20.169-7.808l0,0c-3.06-1.7-6.825,0.485-6.868,3.985l0,0c-0.438,35.612,20.412,67.3,51.646,81.569  c-0.629,0.015-1.258,0.022-1.888,0.022c-4.951,0-9.964-0.478-14.898-1.421l0,0c-3.446-0.658-6.341,2.611-5.271,5.952l0,0  c10.138,31.651,37.39,54.981,70.002,60.278c-27.066,18.169-58.585,27.753-91.39,27.753l-10.227-0.006  c-3.151,0-5.816,2.054-6.619,5.106c-0.791,3.006,0.666,6.177,3.353,7.74c36.966,21.513,79.131,32.883,121.955,32.883  c37.485,0,72.549-7.439,104.219-22.109c29.033-13.449,54.689-32.674,76.255-57.141c20.09-22.792,35.8-49.103,46.692-78.201  c10.383-27.737,15.871-57.333,15.871-85.589v-1.346c-0.001-4.537,2.051-8.806,5.631-11.712c13.585-11.03,25.415-24.014,35.16-38.591  l0,0C411.924,77.126,407.866,72.302,403.632,74.18L403.632,74.18z"/></svg></i></a>
+					<a rel="noopener noreferrer" href="https://www.instagram.com" class="Link" target="_blank"><i class="icon_instagram" aria-label="AMC Insta" style="background-image: none;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"><path d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722   c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156   C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156   c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722   c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/><path d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517   S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083   s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"/><circle cx="418.31" cy="134.07" r="34.15"/></svg></i></a>
+				</div>
+			</div>
+			<div class="footer-bg-con">
+				<div class="site-map-con">
+					<div class="sub-map-con">
+						<p class="small-title">Our Company</p>
+						<ul>
+							<li><a href="#">Our brands</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Corporate Information</a></li>
+							<li><a href="#">Investor Relations</a></li>
+							<li><a href="#">Media Center</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Associate Portal</a></li>
+							<li><a href="#">AMC Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="sub-map-con">
+						<p class="small-title">Moview</p>
+						<ul>
+							<li><a href="#">Movies</a></li>
+							<li><a href="#">Theatres</a></li>
+							<li><a href="#">Ratings Information</a></li>
+							<li><a href="#">Dolby Cinema at AMC</a></li>
+							<li><a href="#">IMAX at AMC</a></li>
+							<li><a href="#">PRIME at AMC</a></li>
+							<li><a href="#">RealD 3D</a></li>
+							<li><a href="#">BigD at AMC</a></li>
+						</ul>
+					</div>
+					<div class="sub-map-con">
+						<p class="small-title">Programming</p>
+						<ul>
+							<li><a href="#">$5 Fan Faves</a></li>
+							<li><a href="#">Private Theatre Rentals</a></li>
+							<li><a href="#">AMC Artisan Films</a></li>
+							<li><a href="#">Indian Cinema</a></li>
+							<li><a href="#">Asian-Pacific Cinema</a></li>
+							<li><a href="#">Pantallas AMC</a></li>
+							<li><a href="#">Film Festivals</a></li>
+							<li><a href="#">Fathom Events</a></li>
+							<li><a href="#">The Metropolitan Opera</a></li>
+							<li><a href="#">Sensory Friendly Films</a></li>
+							<li><a href="#">Groups & Events</a></li>
+						</ul>
+					</div>
+					<div class="sub-map-con">
+						<p class="small-title">More</p>
+						<ul>
+							<li><a href="#">AMC Stubs</a></li>
+							<li><a href="#">Offers & Promotions</a></li>
+							<li><a href="#">Gift Cards</a></li>
+							<li><a href="#">Mobile App</a></li>
+							<li><a href="#">AMC Scene</a></li>
+							<li><a href="#">American Film Institute</a></li>
+							<li><a href="#">Assistive Moviegoing</a></li>
+							<li><a href="#">Request Refund</a></li>
+							<li><a href="#">Business Clients</a></li>
+						</ul>
+					</div>
+					<div class="footer-form">
+						<p class="small-title">Subscribe Email</p>
+						<form action="https://formspree.io/f/xzbkjgja" method="POST">
+							<div><label for="sub-name">Name</label><input id="sub-name" type="text" name="name"></div>
+							<div><label for="sub-email">Email</label><input id="sub-email" type="email" name="_replyto"></div>
+							<input class="submit-btn" type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+				<div class="assential-info">
+					<div class="info-first-row">
+						<p>© Copyright 2020 AMC Theatres</p>
+						<div class="info-img-con">
+							<img src="images/logo2.png" alt="logo">
+							<img class="main-logo" src="images/logo.png" alt="logo">
+							<img src="images/logo3.png" alt="logo">
+						</div>
+						<a href="#">A Wanda Group Company</a>
+					</div>
+					<span class="sm_des">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			const question_btn = document.getElementById("question");
+			const comment_btn = document.getElementById("comment");
+			const order_btn = document.getElementById("orderProblem");
+			const input_field = document.getElementById("orderproblemtext");
+			order_btn.onfocus = () => {
+				input_field.style="display: block";
+			}
+			question_btn.onfocus = () => {
+				input_field.style="display: none";
+			}
+			comment_btn.onfocus = () => {
+				input_field.style="display: none";
+			}
+		});
+	</script>
+</body>
+</html>
